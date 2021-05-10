@@ -11,7 +11,7 @@ export const Balance = () => {
 
   return (
     <>
-      <h4>Your Balance</h4>
+      <h4>Tu balance</h4>
     <h1>${numberWithCommas(total)}</h1>
     </>
   )

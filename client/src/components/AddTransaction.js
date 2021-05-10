@@ -20,20 +20,20 @@ export const AddTransaction = () => {
 
   return (
     <>
-      <h3>Add new transaction</h3>
+      <h3>Agregar nueva transaccion</h3>
       <form onSubmit={onSubmit}>
         <div className="form-control">
-          <label htmlFor="text">Text</label>
-          <input type="text" value={text} onChange={(e) => setText(e.target.value)} placeholder="Enter text..." />
+          <label htmlFor="text">Texto</label>
+          <input type="text" value={text} onChange={(e) => setText(e.target.value)} placeholder="Ingresar texto..." />
         </div>
         <div className="form-control">
           <label htmlFor="amount"
-            >Amount <br />
-            (negative - expense, positive - income)</label
+            >Cantidad <br />
+            (negativo - gastos, positivo - ingresos)</label
           >
-          <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="Enter amount..." />
+          <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="Ingresar cantidad..." />
         </div>
-        <button className="btn">Add transaction</button>
+        <button className="btn">Agregar transaccion</button>
       </form>
     </>
   )

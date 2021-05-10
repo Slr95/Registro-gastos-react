@@ -4,11 +4,11 @@ const TransactionSchema = new mongoose.Schema({
   text: {
     type: String,
     trim: true,
-    required: [true, 'Please add some text']
+    required: [true, 'Por favor agrega algun texto']
   },
   amount: {
     type: Number,
-    required: [true, 'Please add a positive or negative number']
+    required: [true, 'Por favor agrega un numero positivo o negativo']
   },
   createdAt: {
     type: Date,
